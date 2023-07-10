@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $name = 'Alessandra';
+    $links = ['home', 'service', 'about', 'where'];
+    return view('homepage', compact('name', 'links'));
 
-    return view('homepage', compact(, 'name'));
 });

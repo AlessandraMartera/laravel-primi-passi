@@ -41,10 +41,13 @@
         <nav>
             <ul>
 
-                <li><a href="">home</a></li>
-                <li><a href="">services</a></li>
+                @foreach ($links as $link)
+                    <li><a href="">{{ $link }}</a></li>
+                @endforeach
+
+                {{-- <li><a href="">services</a></li>
                 <li><a href="">about us</a></li>
-                <li><a href="">find us</a></li>
+                <li><a href="">find us</a></li> --}}
 
             </ul>
         </nav>
