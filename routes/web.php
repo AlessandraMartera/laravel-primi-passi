@@ -16,7 +16,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $name = 'Alessandra';
-    $links = ['home', 'service', 'about', 'where'];
+    $links = ['home', 'services', 'about', 'where'];
     return view('homepage', compact('name', 'links'));
+    route('services');
 
 });
+
+
+Route::get('/services', function () {
+    return view('services');
+});
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('/where', function () {
+    return view('where');
+});
+
+

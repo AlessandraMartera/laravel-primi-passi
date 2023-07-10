@@ -28,6 +28,10 @@
             display: flex;
             justify-content: space-between;
         }
+
+        a {
+            color: blue;
+        }
     </style>
 </head>
 
@@ -42,12 +46,8 @@
             <ul>
 
                 @foreach ($links as $link)
-                    <li><a href="">{{ $link }}</a></li>
+                    <li><a href="/{{ $link }}">{{ $link }}</a></li>
                 @endforeach
-
-                {{-- <li><a href="">services</a></li>
-                <li><a href="">about us</a></li>
-                <li><a href="">find us</a></li> --}}
 
             </ul>
         </nav>
